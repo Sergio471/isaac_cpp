@@ -152,7 +152,7 @@ template<int ALPHA, class T>
       }
    
     // scramble it
-      for(int i=0; i < 4; ++i)         
+      for(int j=0; j < 4; ++j)         
       {
          shuffle(a,b,c,d,e,f,g,h);
       }
