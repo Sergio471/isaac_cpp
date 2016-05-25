@@ -8,7 +8,6 @@ int main()
 { 
     std::unordered_set<UINT32> nset;
     QTIsaac<>  isaac;
-    int i = 0;
     int nOfTrials;
 
     std::cout << "Enter num of trials: ";
@@ -19,6 +18,7 @@ int main()
         nOfTrials = 1e6;
     }
 
+    int i = 0;
     for (; i < nOfTrials; ++i) 
     {
         UINT32 cur = isaac.rand();
