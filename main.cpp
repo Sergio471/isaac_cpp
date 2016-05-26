@@ -1,13 +1,16 @@
 #include "isaac.hpp"
 #include <iostream> 
 #include <unordered_set>
+#include <ctime>
 
 using namespace std;
 
 int main()
 { 
+    std::srand(std::time(0));
     std::unordered_set<UINT32> nset;
-    QTIsaac<>  isaac;
+    int a = std::rand(), b = std::rand(), c = std::rand();
+    QTIsaac<>  isaac(a, b, c);
     int nOfTrials;
 
     std::cout << "Enter num of trials: ";
